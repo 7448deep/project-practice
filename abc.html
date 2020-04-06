@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Designing all grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: gray;
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            padding: 5px;
+        }
+
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            /* text-align: center;  */
+            display: flex;
+        }
+
+        @media only screen and (max-width: 450px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                background-color :palevioletred;
+                grid-column-gap: 50px;
+                grid-row-gap: 50px;
+                padding: 5px;
+            }
+
+
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid black;
+                padding: 20px;
+                font-size: 30px;
+                /* text-align: center;  */
+                /* display: flex; */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>GeeksforGeeks</h1>
+
+    <!-- Creating grids -->
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+
+    </div>
+
+</body>
+
+</html>

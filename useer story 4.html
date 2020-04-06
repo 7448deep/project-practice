@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .categories {
+        border: 2px solid red;
+        background-color: #dad8d8;
+        box-sizing: border-box;
+        margin: 10px 10px;
+    }
+
+    #cat-title {
+        margin: 1px 1px;
+    }
+
+    #cat-subtitle {
+        font-size: 0.8em;
+        margin: 1px 1px;
+    }
+
+    .category-list {
+
+        display: flex;
+        flex-flow: row;
+
+    }
+
+    .item1 {
+        text-align: center;
+        font-size: 11px;
+        list-style: none;
+        border: solid green;
+        margin: 2px 2px;
+        padding: 20px 1px;
+        width: 12%;
+        box-sizing: border-box;
+    }
+
+    .item1 img {
+        height: 50%;
+        width: 40%;
+        border: 1px solid green;
+    }
+
+
+    @media only screen and (max-width: 450px) {
+        .item1 {
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            font-size: 8px;
+            width: 22%;
+            box-sizing: border-box;
+        }
+
+        .category-list {
+
+            flex-wrap: wrap;
+        }
+
+    }
+</style>
+
+<body>
+    <section class="categories">
+        <div>
+
+            <h2 id="cat-title">
+                Quick Searches
+            </h2>
+        </div>
+        <div>
+            <p id="cat-subtitle">Discover restaurants by type of meal</p>
+
+        </div>
+
+        <ul class="category-list">
+            <li class="item1">
+                <img src="images/delivery.png" alt="abc">
+                <br><br>
+                Delivery
+            </li>
+
+            <li class="item1">
+                <img src="images/pocket-friendly-delivery.png" alt="123">
+                <br><br>
+                Pocket-Friendly Delivery
+            </li>
+
+            <li class="item1">
+                <img src="images\breakfast.png" alt="">
+                <br>
+                <br>
+                Breakfast
+
+
+            </li>
+
+            <li class="item1">
+                <img src="images\lunch.png" alt="">
+                <br><br>
+                Lunch
+            </li>
+
+            <li class="item1">
+                <img src="images\dinner.png" alt="">
+                <br><br>
+                Dinner
+            </li>
+
+            <li class="item1">
+                <img src="images\drinks.png" alt="">
+                <br><br>
+                Drinks & Nightlife
+            </li>
+
+            <li class="item1">
+                <img src="images\cafes.png" alt="">
+                <br><br>
+                Cafes
+            </li>
+
+            <li class="item1">
+                <img src="images\desserts.png" alt="">
+                <br><br>
+                Desserts & Bakes
+            </li>
+
+        </ul>
+
+    </section>
+
+</body>
+
+</html>

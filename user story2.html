@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .banner {
+            background-image: url(bg.jpg);
+    background-size: cover;
+    height: 655px;
+    width: 100%;
+
+        }
+
+        .story2 {
+            display: block;
+    width: 96%;
+    margin: auto;
+    border: 2px solid red;
+    padding: 80px 2px;
+    text-align: center;
+    margin-top: 50px;
+        }
+
+        .city {
+            display: inline-block;
+        }
+
+        #city {
+            background-color: rgba(195, 236, 238, 0.863);
+            border-radius: 3px;
+            padding: 6px 10px;
+            margin: 4px 3px;
+            border: none;
+
+
+        }
+
+        .search-restaurant {
+            display: inline-block;
+            /* margin: 4px 5px; */
+            margin-right: 45px;
+            margin-bottom: 2px;
+        }
+
+        #search-rest {
+
+            background-color: rgb(205, 235, 36);
+            border: none;
+            border-radius: 3px;
+            padding: 5px 20px;
+            width: 100%;
+        }
+
+        .searchbutton {
+            display: inline-block;
+            /* margin: 4px 3px; */
+        }
+
+        #search-btn {
+            background-color: red;
+            border-radius: 30px;
+            border: none;
+            padding: 6px 10px;
+
+        }
+
+        @media only screen and (max-width: 450px) 
+        {
+            .searchbutton {
+            display: inline-block;
+            /* margin: 4px 3px; */
+            background-color: chartreuse;
+        }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <section class="banner">
+<div>
+    <br>
+</div>
+        <div class="story2">
+            <div class="zomatologo">
+                logo
+            </div>
+            <h3>
+                Find the best restaurants, cafés, and bars in Mumbai
+            </h3>
+            <div class="city">
+
+
+                <select id="city">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Sangli">Sangli</option>
+                </select>
+            </div>
+
+
+            <div class="search-restaurant">
+                <input type="text" id="search-rest" placeholder="Search for restaurants or cuisines...">
+
+            </div>
+            <div class="searchbutton">
+                <button id="search-btn">
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

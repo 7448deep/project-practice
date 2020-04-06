@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+.container
+{
+    width: 100%;
+    height: 90%;
+}
+.collection_container
+{
+    height: 50%;
+    width: 100%;
+    padding-left: 3%;
+}
+.zombo-land
+{
+    height: 100%;
+    width: 80%;
+}
+#collection_img img{
+    height: 100%;
+    width: 100%;
+}
+.card-body
+{
+    height: 70%;
+}
+.widget
+{
+    border: 1px solid red;
+    padding: 15px;
+    background-color: cornsilk;
+    width: 90%;
+}
+.search-del
+{
+    width: 75%;
+    border: 1px solid red;
+ border-radius:5px ;
+ height :35px;
+}
+.order-btn
+{
+    margin-top: 10px;
+    border-radius:10px ; 
+    padding: 5px;
+    display: block;
+    width: 100%;
+    background-color:rgb(44, 174, 214);
+    color: #fff;
+}
+    .order-btn:hover
+    {
+        background-color: #46a049 ;
+    }
+.detect-btn
+{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(44, 174, 214);
+    color: white;
+    cursor: pointer;
+}
+    .detect-btn:hover
+    {
+        background-color: #46a049;
+    }
+#card_text1{
+    color: red;
+    background-color: salmon    ;
+}
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="row">
+            <div class="col-sm col-mod-8">
+                <div class="collection_container">
+                    <img class="zombo-land" src="images\ad-zomaland.jpeg">
+                    <br><br>
+                    <div class="collection_text">
+                        <h4>Collections</h4>
+                        <p>Explore curated lists of top restaurants,cafes,pubs and bars in Mumbai, based on trends.</p>
+                        <div class="row" id="collection_image">
+                            <div class="col-sm mod-sm">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <img id="trending" class="card "
+                                                src="images\trending.jpg"
+                                                alt="trending">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card_text">Trending</h5>
+                                                <p>Most popular restaurants in town this week</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm mod-sm">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <img id="mumbai" class="card "
+                                                src="images\mumbai.jpg"
+                                                alt="mumbai">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card_text">Best in Mumbai</h5>
+                                                <p>The hunt for highest-rated restaurants in your city ends here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <br />
+                            <div class="col-sm mod-sm">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <img id="open" class="card "
+                                                src="images\open.jpg"
+                                                alt="open">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card_text">Newly Opened</h5>
+                                                <p>The best new places in town</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm mod-sm">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <img id="surecrisp" class="card "
+                                                src="images\surecrisp.jpeg"
+                                                alt="surecrisp">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card_text">SureCrisp Quick Fries</h5>
+                                                <p>Turn up the Flavour by ordering SureCrisp fries</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <br>
+                            <div class="col-sm col-md">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <a id="card_text1" href="#">
+                                            <h5><strong>All collections in Mumbai</strong></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order" class="col-sm col-md-4">
+                <h2>Order Food Online</h2>
+                <p>Best Restaurants Delivering to your Doorstep</p>
+                <div class="widget">
+                    <h4>Enter your delivery location</h4>
+                    <br />
+                    <input class="search-del" type="text" placeholder="Type delivery location here">
+                    <button class="detect-btn ">Detect</button>
+                    <br />
+                    <br />
+                    <button class="order-btn">Order Food Online!</button>
+                    <br />
+                    <br />
+                    <h5>Use code ZOMATO to get up to 50% OFF. T&Cs apply.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

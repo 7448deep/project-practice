@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* user story1  */
+.h-container
+{
+    width: 100%;
+    display: flex;
+    background-color: honeydew;
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+}
+
+.navleft
+{
+    border: 2px solid red;
+    flex-basis: 10%;
+    
+}
+.navleftcontent
+{
+    display: inline-block;
+    border: 2px solid red;
+    padding: 6px 0px;
+    /* flex-wrap: wrap; */
+    margin: 10px 3px;
+}
+
+.navright
+{
+    flex-basis: 90%;
+   border: 2px solid red;
+
+}
+.navright ul
+{
+float: right;
+}
+.navright ul li{
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.navright a
+{
+    padding: 2px 2px;
+    border: 1px solid black;
+text-decoration: none;
+clear: both;
+
+}
+@media only screen and (max-width: 450px) {
+  .h-container {
+    background-color: grey;
+  }
+  .navright ul li{
+    display: block;
+    padding: 2px -2px;
+margin-bottom: 10px;    
+    
+}
+.navleft
+{
+    border: 2px solid red;
+    flex-basis: 30%;
+    
+}
+.navright
+{
+    flex-basis: 70%;
+   border: 2px solid red;
+
+}
+}
+/* user story 1 ends  */
+
+
+
+    </style>
+</head>
+<body>
+    <!-- user story 1 -->
+    
+    <header class="h-container">
+        
+            <div class="navleft">
+                <div class="navleftcontent">
+                    <img src="" alt="">
+                    <a href="" id="">Get the app</a>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="navright">
+                <ul>
+                    <!-- <img id="breakfast" src="C:\Users\7448d\Desktop\zomato icons\1.jpg" alt="breakefast"> -->
+                    <li><a href="#" id="nav_item_1">Order Food</a></li>
+                    <li><a href="#" id="nav_item_2">Book a Table</a></li>
+                    <li><a href="#" id="nav_item_3">Zomato Gold</a></li>
+                </ul>
+            </div>
+            
+        </header>
+<!-- user story 1 ends -->
+
+
+
+            
+</body>
+</html>

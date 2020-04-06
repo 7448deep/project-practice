@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+/* user story (main) 3 */
+.story3cont {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: rgb(112, 36, 36);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            padding: 5px;
+        }
+
+
+        .story3item {
+            background-color: rgba(86, 223, 45, 0.8);
+            border: 1px solid black;
+            padding: 0px;
+            font-size: 20px;
+           
+        }
+   
+
+/* user story 3 leftright  */
+.collection {
+            border: 1px solid skyblue;
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .collectionleft {
+/* flex-wrap: wrap; */
+            flex-basis: 70%;
+            border: 3px solid rgb(102, 226, 19);
+        }
+
+        .collectionright {
+            flex-wrap: wrap ;
+            flex-basis: 30%;
+            border: 3px solid orangered;
+            text-align: center;
+        }
+
+        .rightpanel {
+            display: inline-block;
+            border: 1px solid darkmagenta;
+            padding: 0px 4px;
+        }
+
+        .rightpanel #subtitle {
+            color: #89959B;
+        }
+
+        .widgetcont {
+            border: 1px solid rgb(226, 43, 58);
+            padding: 0px 10px;
+            padding-bottom: 9rem;
+            background-color: #fff;
+
+        }
+
+        .widget {
+            margin: 3px;
+            /* border: 1px solid rgb(219, 201, 34); */
+            box-sizing: border-box;
+        }
+
+        .textdetectcont {
+            /* border: 1px solid blueviolet; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-del {
+            flex-basis: 80%;
+            color: #89959B;
+            padding: 0.5em;
+        }
+
+        .detect-btn {
+            flex-basis: 20%;
+            padding: 0.5em;
+        }
+
+        .orderbtncont {
+            width: 100%;
+        }
+
+        .order-btn {
+            margin: 5px 1px;
+            width: 85%;
+            background-color: #069e44;
+            border-style: none;
+            padding: 0.5em 0px;
+            border-radius: 3px;
+        }
+
+        .dispara p {
+            color: green;
+            text-align: center;
+        }
+        .adzomato
+        {
+          text-align: center;
+          /* justify-content: center;  */
+        width: 80;
+        border: 1px solid orangered;
+        }
+        .adzomato img{
+            width: 40%;
+        }
+        .collectionheding
+        {
+            border: 1px solid orangered;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: gray;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            padding: 5px;
+        }
+
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            padding: 0px;
+            font-size: 20px;
+            /* text-align: center;  */
+            display: flex;
+        }
+        .griditem1{
+   flex-basis: 40%; 
+  }
+  .griditem1 img{
+      height: 100%;
+      width: 100%;
+      /* padding: 0px 0px; */
+  }
+  .griditem2{
+   flex-basis: 60%; 
+   padding: 0em 0.5em;
+   font-size: 5px;
+  }
+
+        .collastdiv
+        {
+            border: 1px solid orangered;
+            text-align: center;
+        }
+
+/* user story 3 leftright end  */
+
+/* user story (main) 3 end  */
+
+@media only screen and (max-width: 420px) {
+    .story3cont {
+                display: grid;
+                grid-template-columns: auto;
+                background-color :palevioletred;
+                /* grid-column-gap: 10px; */
+                grid-row-gap: 10px;
+                padding: 5px;
+            }
+
+
+            .story3item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid black;
+                padding:    0px;
+                /* font-size: 1.5rem */
+                
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                background-color :palevioletred;
+                /* grid-column-gap: 10px; */
+                grid-row-gap: 10px;
+                padding: 5px;
+            }
+
+
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid black;
+                padding:    0px;
+                /* font-size: 1.5rem */
+                
+            }
+}         
+    </style>
+</head>
+<body>
+    
+   
+
+    <!-- Creating grids -->
+    <div class="story3cont">
+        <div class="story3item">
+            
+            <div class="collectionleft">
+                <div class="adzomato">
+                    <img src="/images/ad-zomaland.jpeg" alt="ad-zomaland">
+                </div>
+                <div class="collectionheding">
+                    <h4>
+                        Collection
+                    </h4>
+                    <p>Explore curated loist of top restaurants,cafes pubs, and bar in Mumbai, based on trends</p>
+                </div>
+    
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="griditem1">
+                            <img src="/images/trending.jpg" alt="trending">
+            
+                        </div>
+                        <div class="griditem2">
+            
+                           <p>Trending This week</p> 
+                        <p>most popular restaurants in this week</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="griditem1">
+                            <img src="/images/mumbai.jpg" alt="trending">
+            
+                        </div>
+                        <div class="griditem2">
+            
+                           <p>Trending This week</p> 
+                        <p>most popular restaurants in this week</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="griditem1">
+                            <img src="/images/open.jpg" alt="trending">
+            
+                        </div>
+                        <div class="griditem2">
+            
+                           <p>Trending This week</p> 
+                        <p>most popular restaurants in this week</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="griditem1">
+                            <img src="/images/surecrisp.jpeg" alt="trending">
+            
+                        </div>
+                        <div class="griditem2">
+            
+                           <p>Trending This week</p> 
+                        <p>most popular restaurants in this week</p>
+                        </div>  
+                    </div>
+            
+                </div>
+    
+                <div class="collastdiv">
+                    <p> All collections in Mumbai</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-story3item">
+           
+            <div class="collectionright">
+                <div class="rightpanel">
+                    <p> <b> Order Food Online</b></p>
+                    <p id="subtitle"> Best restaurants delivering to your doorstep </p>
+                    <div class="widgetcont">
+    
+                        <div class="widget">
+                            <h4>
+                                Enter your delivery location
+                            </h4>
+                            <div class="textdetectcont">
+                                <div class="srchdelcontainer">
+                                    <input type="text" class="search-del" placeholder="Type delivery location here">
+    
+                                </div>
+                                <div>
+    
+                                    <button class="detect-btn">
+                                        Detect
+                                    </button>
+                                </div>
+    
+                            </div>
+                            <div class="orderbtncont">
+    
+                                <button class="order-btn">
+                                    Order Food Online!
+                                </button>
+                            </div>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="dispara">
+    
+                            <P>Use code <b>ZOMATO</b> to get up to 50% OFF. <br> T&Cs apply.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+
+</body>
+</html>

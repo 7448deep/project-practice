@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+.rightpanel
+{
+            display: inline-block;
+            border: 1px solid darkmagenta;
+            padding: 0px 4px;
+        }
+.rightpanel #subtitle
+{
+    color: #89959B;
+}
+        .widgetcont {
+            border: 1px solid rgb(226, 43, 58);
+            padding: 0px 10px;
+            padding-bottom: 9rem;
+        }
+
+        .widget {
+            margin: 3px;
+            border: 1px solid rgb(219, 201, 34);
+            box-sizing: border-box;
+        }
+
+        .textdetectcont {
+            border: 1px solid blueviolet;
+            width: 85%;
+            display: flex;
+
+        }
+
+        .search-del {
+            flex-basis: 80%;
+color: #89959B;
+        }
+
+
+        .detect-btn {
+            flex-basis: 20%;
+
+
+
+        }
+
+        .orderbtncont {
+            width: 85%;
+        }
+
+        .order-btn {
+
+            margin: 5px 1px;
+            width: 100%;
+            background-color: #069e44;
+            border-style: none;
+            padding: 4px 0px;
+            border-radius: 3px;
+        }
+
+        .dispara p {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rightpanel">
+       <p> <b> Order Food Online</b></p> <p id="subtitle"> Best restaurants delivering to your doorstep </p> 
+        <div class="widgetcont">
+            
+            <div class="widget">
+                <h4>
+                    Enter your delivery location
+                </h4>
+                <div class="textdetectcont">
+                    <div class="srchdelcontainer">
+                        <input type="text" class="search-del" placeholder="Type delivery location here">
+
+                    </div>
+                    <div>
+
+                        <button class="detect-btn">
+                            Detect
+                        </button>
+                    </div>
+
+                </div>
+                <div class="orderbtncont">
+
+                    <button class="order-btn">
+                        Order Food Online!
+                    </button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="dispara">
+
+                <P>Use code <b>ZOMATO</b> to get up to 50% OFF. <br> T&Cs apply.</P>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

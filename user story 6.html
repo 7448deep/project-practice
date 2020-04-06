@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* user story 6  */
+
+        .footer-wrapper {
+            background-color: #282c35;
+            color: white;
+            padding: 1em 1em;
+        }
+
+        .logoandcity {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+
+            flex-basis: 50%;
+        }
+
+        .logo img {
+            padding: 0.5em 0.5em;
+            height: 65px;
+            width: 65px;
+
+        }
+
+
+
+
+.footcity {
+            box-sizing: border-box;
+            text-align: right;
+            flex-basis: 50%;
+            padding: 1% 1%;  
+        }
+
+        .footcity #city {
+            padding: 0.5em 1em;
+            background-color: rgb(14, 13, 13);
+    color: white;
+        }
+
+
+.aboutcont {
+        
+        display: inline-flex;
+        width: 100%;
+        padding: 1em 0.1em;
+    }
+    
+    .aboutlist
+    {
+        list-style: none;
+        width: 28%;
+        font-size:0.7em;
+        line-height: 1.5rem;
+        padding: 10px;
+    }
+    .aboutlist1
+    {
+        list-style: none;
+        width: 16%;
+        font-size:0.7em;
+        line-height: 1.5rem;
+        padding: 10px;
+    }
+.aboutlist h3{
+    font-size: 1.2em;
+}
+.contries h4{
+    margin: 1px 1px;
+    padding: 1px 1px;
+}
+
+
+        .contrycont {
+        
+            display: inline-flex;
+            width: 100%;
+            padding: 0.5em 0.1em;
+        }
+        .contrylist
+        {
+            list-style: none;
+            width: 20%;
+            font-size:0.7em;
+            line-height: 1.5rem;
+            padding: 10px;
+        }
+        
+
+        .policyandicon {
+            display: flex;
+            align-items: center;
+        }
+
+        .policy {
+
+            display: inline-flex;
+            list-style: none;
+            flex-basis: 80%;
+            /* float: left; */
+            font-size: 0.8em;
+        }
+
+        .policy li {
+
+            padding: 5px 5px;
+        }
+
+        .socialicon {
+            flex-basis: 20%;
+            text-align: right;
+            display: inline-flex;
+        }
+
+        .fa {
+            padding: 15px;
+            font-size: 1rem;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px 2px;
+            background-color: black;
+
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: black;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: black;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: black;
+            color: white;
+        }
+
+        .termcondition {
+            font-size: 0.7em;
+            padding: 1em 1em;
+        }
+
+        /* user story 6 end  */
+        @media only screen and (max-width: 420px) {
+            .policy {
+
+                display: inline;
+                list-style: none;
+                flex-basis: 80%;
+                padding-left: 1em;
+                /* float: left; */
+            }
+
+            .socialicon {
+                flex-basis: 20%;
+                text-align: right;
+                display: inline;
+                padding-right: 1em;
+            }
+
+        .aboutcont {
+        
+            display: flex;
+            width: 100%;
+            padding: 1em 0.1em;
+            flex-wrap: wrap;
+        }
+        .aboutlist
+        {
+            list-style: none;
+            width: 45%;
+            font-size:0.7em;
+            line-height: 1rem;
+            padding: 1em 0em;
+            padding-left: 10px;
+        }
+        .aboutlist1
+    {
+        list-style: none;
+        width: 100%;
+        font-size:0.7em;
+        line-height: 1rem;
+        padding: 10px;
+    }
+        .contrycont {
+        border: 1px solid sienna;
+        display: flex;
+        width: 100%;
+        padding: 1em 0.1em;
+        flex-wrap: wrap;
+        }
+        .contrylist
+        {
+        list-style: none;
+        width: 45%;
+        font-size:0.7em;
+        line-height: 1rem;
+        padding: 1em 0em;
+        padding-left: 10px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- user story 6   -->
+
+
+    <footer>
+        <div class="footer-wrapper">
+
+
+            <div class="logoandcity">
+                <div class="logo">
+
+                    <img src="/images/zomato_flat_bg_logo.svg" alt="zomato_flat_bg_logo">
+                </div>
+                <div class="footcity">
+
+
+                    <select id="city">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Sangli">Sangli</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+
+
+            <div>
+            
+                <div class="aboutcont">
+
+                    <div class="aboutlist">
+                       <h3>
+                           About Zomato
+                       </h3>
+                        <li>About Us</li>
+                        <li>Culture</li>
+                        <li>Bolg</li>
+                        <li>Careers</li>
+                        <li>Contact </li>
+                    </div>
+                    <div class="aboutlist">
+                        <h3>
+                            For Foodies
+                        </h3>
+                        <li>Code Of Conduct</li>
+                        <li>Community</li>
+                        <li>Verified users</li>
+                        <li>Bloger Help</li>
+                        <li> Developer </li>
+                        <li>Mobile Apps</li>
+                    </div>
+                    <div class="aboutlist">
+                        <h3>
+                            For Restaurant  
+                        </h3>
+                        <li>Add a Restaurant</li>
+                        <li>claim your listing</li>
+                        <li>Business App</li>
+                        <li>Business Owner Guidelines</li>
+                        <li>Business Blog</li>
+                        <li>Restaurants Widgets</li>
+                        <li>Products for Business</li>
+                    </div>
+                    <div class="aboutlist1">
+
+                        <li>Advertise</li>
+                        <li>Order</li>
+                        <li>Book</li>
+                        <li>Trace</li>
+                        <li> Hyperpure</li>
+                    </div>
+                 
+                </div>
+
+
+                
+            </div>
+            <hr>
+            <div class="contries">
+                <h4>
+                    Countries
+                </h4>
+                <div class="contrycont">
+
+                    <div class="contrylist">
+                        <li>Australia</li>
+                        <li>Barzil</li>
+                        <li>Canada</li>
+                        <li>Chile</li>
+                        <li>Czech Republic</li>
+                    </div>
+                    <div class="contrylist">
+                        <li>Australia</li>
+                        <li>Barzil</li>
+                        <li>Canada</li>
+                        <li>Chile</li>
+                        <li>Czech Republic</li>
+                    </div>
+                    <div class="contrylist">
+                        <li>Australia</li>
+                        <li>Barzil</li>
+                        <li>Canada</li>
+                        <li>Chile</li>
+                        <li>Czech Republic</li>
+                    </div>
+                    <div class="contrylist">
+                        <li>Australia</li>
+                        <li>Barzil</li>
+                        <li>Canada</li>
+                        <li>Chile</li>
+                        <li>Czech Republic</li>
+                    </div>
+                    <div class="contrylist">
+                        <li>Australia</li>
+                        <li>Barzil</li>
+                        <li>Canada</li>
+                        <li>Chile</li>
+                        <li>Czech Republic</li>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <hr>
+
+
+
+
+
+            <div class="policyandicon">
+                <div class="policy">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li> API Policy</li>
+                    <li>CSR </li>
+                    <li>Security</li>
+                    <li>Sitemap</li>
+                </div>
+
+                <div class="socialicon">
+
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+
+
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="termcondition">
+                By continuing past this page, you agree to oue Terms of Services, Cookie Policy, Privacy Policy and
+                Contect Policies. All trademarks are properties of their respective owners. © 2008-2019 - Zomato™ Media
+                Pvt Ltd. All rights reserved.
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- user story 6 end   -->
+</body>
+
+</html>
